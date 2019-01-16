@@ -20,6 +20,9 @@
 .background_comofunciona{
 	background-image: url(../images/background4.jpg);
 }
+.background_locales{
+	background-image: url(../images/background5.jpg);
+}
 .content{
 	padding-top: 110px;
 }
@@ -86,11 +89,25 @@
 	justify-content: center;
 	align-items: center;
 }
+.content_comofunciona{
+	background-color: rgba(0, 0, 0, .8);
+	border-radius: 10px;
+}
+.bubble{
+	display: flex;	
+	flex-direction: column; 
+	justify-content: center;
+	color: white;
+}
+
 .content__title h1{
 	background-color: rgba(171, 175, 0, .8);
 	border-radius: 50px;
 	font-family: 'Yanone Kaffeesatz', sans-serif;
 	padding: 20px;
+}
+.content__bubble{
+	height: 40px;
 }
 .content__pasos{
 	height: 100px;
@@ -125,7 +142,11 @@
 	.carousel-caption h3{
 		font-size: 18px;
 	}
+	.content_comofunciona{
+		margin-top: 20px;
+	}
 }
+
 @media (max-width: 520px){
 	.content__title h1{
 		font-size: 18px;
@@ -179,4 +200,61 @@ footer a{
 	font-size: 10px;
 	padding-top: 50px;
 }
+.local{
+	height: auto;
+	background-color: rgba(0, 0, 0, .9);
+	border-radius: 10px;
+	margin-top: 10px;
+}
+.local h1{
+	font-family: 'Lato', sans-serif;;
+	color: #C5CF38;
+	text-shadow: 2px 2px #00657E;
+}
+.local__item{
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 300px;
+	text-align: center;
+	position: relative;
+}
+.local__item h3{
+	margin: 0;
+	padding: 0;
+	color: white;
+	text-shadow: 2px 2px rgba(54, 54, 54, .9)
+}
+.local__item .local__item_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: rgba(0, 0, 0, .8);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transition: .3s;
+}
+.local__item:hover .local__item_wrapper{
+	background-color: rgba(0, 0, 0, .2);
+}
 
+.local__item--local1{
+	background-image: url(../images/local1.jpg);
+}
+.local__item--local2{
+	background-image: url(../images/local2.jpg);
+}
+.local__item--local3{
+	background-image: url(../images/local3.png);
+}
+.local__item--local4{
+	background-image: url(../images/local4.jpg);
+}
+.local__item--local5{
+	background-image: url(../images/local5.jpg);
+}
+.local__item--local6{
+	background-image: url(../images/local6.jpg);
+}
