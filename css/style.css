@@ -1,29 +1,24 @@
-.index{
+.background{
 	margin: 0;
 	padding: 0;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+}.background_index{
 	background-position: top -50% right;
-	background-attachment: fixed;
 	background-image: url(../images/background.jpg) ;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
-.notprogrammedyet{
-	margin: 0;
-	padding: 0;
-	background-position: center;
-	background-attachment: fixed;
+.background_notprogrammedyet{
 	background-image: url(../images/bandersnatch.jpg) ;
-	background-repeat: no-repeat;
-	background-size: cover;
 }
-.clientes{
-	margin: 0;
-	padding: 0;
-	background-position: center;
-	background-attachment: fixed;
+.background_clientes{
 	background-image: url(../images/background2.jpg) ;
-	background-repeat: no-repeat;
-	background-size: cover;
+}
+.background_contacto{
+	background-image: url(../images/background3.jpg) ;
+}
+.background_comofunciona{
+	background-image: url(../images/background4.jpg);
 }
 .content{
 	padding-top: 110px;
@@ -31,10 +26,15 @@
 .main_nav .icon-bar{
 	background-color: white;
 }
+.active  {
+	color: #C5CF38;
+	font-weight: bold;
+}
 .nav>li>a:hover, .nav>li>a:focus{
 	background-color: transparent;
 	color: #C5CF38;
 	text-shadow: none;
+	font-weight: bold;
 }
 .main_nav_index{
 	background-color: #00657E;
@@ -77,6 +77,77 @@
 	justify-content: flex-end;
 	align-items: flex-end;
 	flex-direction: column;
+}
+.content__title{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: white;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+.content__title h1{
+	background-color: rgba(171, 175, 0, .8);
+	border-radius: 50px;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
+	padding: 20px;
+}
+.content__pasos{
+	height: 100px;
+}
+.content__icons{
+	margin-top: 10px;
+	background-color: rgba(0, 0, 0, .5);
+	border-radius: 10px;
+}
+.content__icons_app{
+	padding: 5px;
+}
+
+.content__icons_app p{
+	text-align: center;
+	color: white;
+	font-size: 18px;
+}
+#icon3{
+	padding-top: 60px;
+}
+@media (max-width: 732px){
+	.content__title h1{
+		font-size: 24px;
+	}
+	.content__icons_app p {
+    font-size: 14px
+  }
+  #icon3{
+	padding-top: 40px;
+	}
+	.carousel-caption h3{
+		font-size: 18px;
+	}
+}
+@media (max-width: 520px){
+	.content__title h1{
+		font-size: 18px;
+	}
+	.content__icons_app p {
+    font-size: 10px
+  }
+  #icon3{
+	padding-top: 20px;
+	}
+	.carousel-caption h3{
+		font-size: 12px;
+	}
+}
+.contact{
+	margin-top: 40px;
+}
+form{
+	padding: 20px;
+	background-color: #00657E;
+	color: white;
+	border-radius: 10px;
 }
 footer{
 	background-color: #00657E;
