@@ -164,6 +164,20 @@
 .contact{
 	margin-top: 40px;
 }
+.local__info{
+	background-color: rgba(0, 0, 0, .8);
+	padding: 5px;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-top: 10px;
+}
+#local_table{
+	color: white;
+}
+.hidden{
+	display: none;
+	transition: .5;
+}
 form{
 	padding: 20px;
 	background-color: #00657E;
